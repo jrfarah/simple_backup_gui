@@ -15,7 +15,8 @@ def select_backup_location():
 	print "select_backup_location"
 
 # Buttons and labels
-folder_to_back_up_label = Label(main, text = folder_to_back_up)
+#Labels if file locations are already selected
+folder_to_back_up_label = Label(main, text = folder_to_back_up) 
 folder_to_back_up_label.grid(row = 1, column = 0)
 backup_location_label = Label(main, text = backup_location)
 backup_location_label.grid(row = 2,column = 0)
