@@ -1,5 +1,8 @@
+#!/usr/bin/python
+
 from Tkinter import *
 from tkFileDialog import askdirectory as selectFolder
+import tkMessageBox as tkmb
 import os
 import linecache
 
@@ -32,6 +35,7 @@ def backup():
 	command = "cp -r {0} {1}".format(folder_to_back_up, backup_location)
 	print command
 	os.system(command+"")
+	tkmb.showinfo("Yippee!","Backup Complete!!")
 
 def write_defaults_select():
 	global select_folder_location_default_checked
